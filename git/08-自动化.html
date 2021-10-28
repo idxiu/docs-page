@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自动化打包、部署 | IDXIU</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600|Open+Sans:400,600;display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="/docs-pagefavicon.png">
+    <link rel="manifest" href="/docs-pagemanifest.json">
+    <link rel="apple-touch-icon" href="/docs-pageimages/icons/apple-icon-152x152.png">
+    <meta name="description" content="IDXIU DOCS">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/docs-page/assets/css/0.styles.23eaf595.css" as="style"><link rel="preload" href="/docs-page/assets/js/app.1d3cca57.js" as="script"><link rel="preload" href="/docs-page/assets/js/2.5c9effa0.js" as="script"><link rel="preload" href="/docs-page/assets/js/5.d6e44560.js" as="script"><link rel="preload" href="/docs-page/assets/js/74.df4b6429.js" as="script"><link rel="preload" href="/docs-page/assets/js/20.099009ba.js" as="script"><link rel="prefetch" href="/docs-page/assets/js/10.3be73913.js"><link rel="prefetch" href="/docs-page/assets/js/100.3a1e3f94.js"><link rel="prefetch" href="/docs-page/assets/js/101.706c0797.js"><link rel="prefetch" href="/docs-page/assets/js/102.56836df3.js"><link rel="prefetch" href="/docs-page/assets/js/103.1794fe8e.js"><link rel="prefetch" href="/docs-page/assets/js/104.4d3ca1bc.js"><link rel="prefetch" href="/docs-page/assets/js/105.5124618f.js"><link rel="prefetch" href="/docs-page/assets/js/106.918eac2a.js"><link rel="prefetch" href="/docs-page/assets/js/107.96b84181.js"><link rel="prefetch" href="/docs-page/assets/js/108.5f55fc43.js"><link rel="prefetch" href="/docs-page/assets/js/109.3ff32854.js"><link rel="prefetch" href="/docs-page/assets/js/11.3db7b002.js"><link rel="prefetch" href="/docs-page/assets/js/110.1929b2b8.js"><link rel="prefetch" href="/docs-page/assets/js/111.c7be6a0b.js"><link rel="prefetch" href="/docs-page/assets/js/112.a90d88a8.js"><link rel="prefetch" href="/docs-page/assets/js/113.1cce92ec.js"><link rel="prefetch" href="/docs-page/assets/js/114.61b8bcb8.js"><link rel="prefetch" href="/docs-page/assets/js/115.ca313879.js"><link rel="prefetch" href="/docs-page/assets/js/116.1aa94789.js"><link rel="prefetch" href="/docs-page/assets/js/117.1922e3e6.js"><link rel="prefetch" href="/docs-page/assets/js/118.56997bff.js"><link rel="prefetch" href="/docs-page/assets/js/119.e41e4225.js"><link rel="prefetch" href="/docs-page/assets/js/12.40040021.js"><link rel="prefetch" href="/docs-page/assets/js/120.b6490257.js"><link rel="prefetch" href="/docs-page/assets/js/121.3f880498.js"><link rel="prefetch" href="/docs-page/assets/js/122.08939cee.js"><link rel="prefetch" href="/docs-page/assets/js/123.363576af.js"><link rel="prefetch" href="/docs-page/assets/js/124.498950cc.js"><link rel="prefetch" href="/docs-page/assets/js/125.7495619a.js"><link rel="prefetch" href="/docs-page/assets/js/126.08918259.js"><link rel="prefetch" href="/docs-page/assets/js/127.72bd2dfb.js"><link rel="prefetch" href="/docs-page/assets/js/128.747eb6a9.js"><link rel="prefetch" href="/docs-page/assets/js/129.a61c7c6e.js"><link rel="prefetch" href="/docs-page/assets/js/13.fddd8b3a.js"><link rel="prefetch" href="/docs-page/assets/js/130.8c9720df.js"><link rel="prefetch" href="/docs-page/assets/js/131.4086b1b7.js"><link rel="prefetch" href="/docs-page/assets/js/132.9acb4181.js"><link rel="prefetch" href="/docs-page/assets/js/133.4eb48567.js"><link rel="prefetch" href="/docs-page/assets/js/134.516abbf6.js"><link rel="prefetch" href="/docs-page/assets/js/135.55eb9eff.js"><link rel="prefetch" href="/docs-page/assets/js/136.b6b056db.js"><link rel="prefetch" href="/docs-page/assets/js/137.aa09c2ab.js"><link rel="prefetch" href="/docs-page/assets/js/138.58a8d6f4.js"><link rel="prefetch" href="/docs-page/assets/js/139.64d4c015.js"><link rel="prefetch" href="/docs-page/assets/js/14.31eaff54.js"><link rel="prefetch" href="/docs-page/assets/js/140.d3acfcca.js"><link rel="prefetch" href="/docs-page/assets/js/141.4d0f95d8.js"><link rel="prefetch" href="/docs-page/assets/js/142.7ee8baa7.js"><link rel="prefetch" href="/docs-page/assets/js/143.c0b95d06.js"><link rel="prefetch" href="/docs-page/assets/js/144.ce6728fd.js"><link rel="prefetch" href="/docs-page/assets/js/145.1a2c6214.js"><link rel="prefetch" href="/docs-page/assets/js/146.79562870.js"><link rel="prefetch" href="/docs-page/assets/js/147.4e720454.js"><link rel="prefetch" href="/docs-page/assets/js/148.bc8e907e.js"><link rel="prefetch" href="/docs-page/assets/js/149.a4fb31dc.js"><link rel="prefetch" href="/docs-page/assets/js/15.39679087.js"><link rel="prefetch" href="/docs-page/assets/js/150.e06e4fa0.js"><link rel="prefetch" href="/docs-page/assets/js/151.82b4b5bb.js"><link rel="prefetch" href="/docs-page/assets/js/152.aadf6de0.js"><link rel="prefetch" href="/docs-page/assets/js/153.a9f16ec4.js"><link rel="prefetch" href="/docs-page/assets/js/154.d68f7228.js"><link rel="prefetch" href="/docs-page/assets/js/155.fe823fbe.js"><link rel="prefetch" href="/docs-page/assets/js/156.9a8f9159.js"><link rel="prefetch" href="/docs-page/assets/js/157.bc57636b.js"><link rel="prefetch" href="/docs-page/assets/js/158.4ab56c9c.js"><link rel="prefetch" href="/docs-page/assets/js/159.2cab8438.js"><link rel="prefetch" href="/docs-page/assets/js/16.4ae08bd0.js"><link rel="prefetch" href="/docs-page/assets/js/160.2dd4607d.js"><link rel="prefetch" href="/docs-page/assets/js/161.afd0d206.js"><link rel="prefetch" href="/docs-page/assets/js/162.6d3f287e.js"><link rel="prefetch" href="/docs-page/assets/js/163.91635c79.js"><link rel="prefetch" href="/docs-page/assets/js/164.418885fa.js"><link rel="prefetch" href="/docs-page/assets/js/165.9daefd33.js"><link rel="prefetch" href="/docs-page/assets/js/17.e2f44df5.js"><link rel="prefetch" href="/docs-page/assets/js/18.eb849ebc.js"><link rel="prefetch" href="/docs-page/assets/js/19.ebf5417b.js"><link rel="prefetch" href="/docs-page/assets/js/21.44abe263.js"><link rel="prefetch" href="/docs-page/assets/js/22.0dbe3bf1.js"><link rel="prefetch" href="/docs-page/assets/js/23.98117722.js"><link rel="prefetch" href="/docs-page/assets/js/24.598cc27a.js"><link rel="prefetch" href="/docs-page/assets/js/25.0af3944e.js"><link rel="prefetch" href="/docs-page/assets/js/26.c36dcdb7.js"><link rel="prefetch" href="/docs-page/assets/js/27.41bff4a6.js"><link rel="prefetch" href="/docs-page/assets/js/28.3bd64ec0.js"><link rel="prefetch" href="/docs-page/assets/js/29.5a4aacfb.js"><link rel="prefetch" href="/docs-page/assets/js/3.676c534f.js"><link rel="prefetch" href="/docs-page/assets/js/30.7a0c02ac.js"><link rel="prefetch" href="/docs-page/assets/js/31.633d4764.js"><link rel="prefetch" href="/docs-page/assets/js/32.dfaeb0a4.js"><link rel="prefetch" href="/docs-page/assets/js/33.b084ec6b.js"><link rel="prefetch" href="/docs-page/assets/js/34.a9d86ee6.js"><link rel="prefetch" href="/docs-page/assets/js/35.6ec48ff5.js"><link rel="prefetch" href="/docs-page/assets/js/36.2043176b.js"><link rel="prefetch" href="/docs-page/assets/js/37.2642d711.js"><link rel="prefetch" href="/docs-page/assets/js/38.868f24e2.js"><link rel="prefetch" href="/docs-page/assets/js/39.440394ec.js"><link rel="prefetch" href="/docs-page/assets/js/4.bd0cfd44.js"><link rel="prefetch" href="/docs-page/assets/js/40.04327baf.js"><link rel="prefetch" href="/docs-page/assets/js/41.d58d3f6a.js"><link rel="prefetch" href="/docs-page/assets/js/42.35995f08.js"><link rel="prefetch" href="/docs-page/assets/js/43.e45f3397.js"><link rel="prefetch" href="/docs-page/assets/js/44.3fc61963.js"><link rel="prefetch" href="/docs-page/assets/js/45.3d539e68.js"><link rel="prefetch" href="/docs-page/assets/js/46.8387d13f.js"><link rel="prefetch" href="/docs-page/assets/js/47.4483f890.js"><link rel="prefetch" href="/docs-page/assets/js/48.84764d57.js"><link rel="prefetch" href="/docs-page/assets/js/49.8c91dcf6.js"><link rel="prefetch" href="/docs-page/assets/js/50.21b8848c.js"><link rel="prefetch" href="/docs-page/assets/js/51.dcf9d4b7.js"><link rel="prefetch" href="/docs-page/assets/js/52.52052b15.js"><link rel="prefetch" href="/docs-page/assets/js/53.94868893.js"><link rel="prefetch" href="/docs-page/assets/js/54.1df4a410.js"><link rel="prefetch" href="/docs-page/assets/js/55.5fe833cc.js"><link rel="prefetch" href="/docs-page/assets/js/56.7b1084ee.js"><link rel="prefetch" href="/docs-page/assets/js/57.a189e713.js"><link rel="prefetch" href="/docs-page/assets/js/58.0960a558.js"><link rel="prefetch" href="/docs-page/assets/js/59.1e0f3b6d.js"><link rel="prefetch" href="/docs-page/assets/js/6.85626fe5.js"><link rel="prefetch" href="/docs-page/assets/js/60.3357261b.js"><link rel="prefetch" href="/docs-page/assets/js/61.6fed1480.js"><link rel="prefetch" href="/docs-page/assets/js/62.7e3217d5.js"><link rel="prefetch" href="/docs-page/assets/js/63.244bb973.js"><link rel="prefetch" href="/docs-page/assets/js/64.502f56ef.js"><link rel="prefetch" href="/docs-page/assets/js/65.40d89aa1.js"><link rel="prefetch" href="/docs-page/assets/js/66.2b45edb8.js"><link rel="prefetch" href="/docs-page/assets/js/67.6315f70f.js"><link rel="prefetch" href="/docs-page/assets/js/68.daac90a3.js"><link rel="prefetch" href="/docs-page/assets/js/69.215b33e8.js"><link rel="prefetch" href="/docs-page/assets/js/7.7738fb1b.js"><link rel="prefetch" href="/docs-page/assets/js/70.7ed86248.js"><link rel="prefetch" href="/docs-page/assets/js/71.63ff2bc2.js"><link rel="prefetch" href="/docs-page/assets/js/72.6fe34b12.js"><link rel="prefetch" href="/docs-page/assets/js/73.ce0d6050.js"><link rel="prefetch" href="/docs-page/assets/js/75.e4d56438.js"><link rel="prefetch" href="/docs-page/assets/js/76.41f35654.js"><link rel="prefetch" href="/docs-page/assets/js/77.e3b8f1a0.js"><link rel="prefetch" href="/docs-page/assets/js/78.f5b941e5.js"><link rel="prefetch" href="/docs-page/assets/js/79.492e69ef.js"><link rel="prefetch" href="/docs-page/assets/js/8.d21ee60a.js"><link rel="prefetch" href="/docs-page/assets/js/80.3141c5a5.js"><link rel="prefetch" href="/docs-page/assets/js/81.caeb37c7.js"><link rel="prefetch" href="/docs-page/assets/js/82.d2e655ba.js"><link rel="prefetch" href="/docs-page/assets/js/83.24a407f7.js"><link rel="prefetch" href="/docs-page/assets/js/84.f1fe238b.js"><link rel="prefetch" href="/docs-page/assets/js/85.5982f9bd.js"><link rel="prefetch" href="/docs-page/assets/js/86.534c0ff9.js"><link rel="prefetch" href="/docs-page/assets/js/87.df6a7f8d.js"><link rel="prefetch" href="/docs-page/assets/js/88.14eae8fe.js"><link rel="prefetch" href="/docs-page/assets/js/89.34c9ec42.js"><link rel="prefetch" href="/docs-page/assets/js/9.7fc65450.js"><link rel="prefetch" href="/docs-page/assets/js/90.d1f3a662.js"><link rel="prefetch" href="/docs-page/assets/js/91.c4f2a3ac.js"><link rel="prefetch" href="/docs-page/assets/js/92.31e5f579.js"><link rel="prefetch" href="/docs-page/assets/js/93.ad69ba22.js"><link rel="prefetch" href="/docs-page/assets/js/94.16ec5b77.js"><link rel="prefetch" href="/docs-page/assets/js/95.9e6aa2b7.js"><link rel="prefetch" href="/docs-page/assets/js/96.9f630df0.js"><link rel="prefetch" href="/docs-page/assets/js/97.c14edf00.js"><link rel="prefetch" href="/docs-page/assets/js/98.d51badfb.js"><link rel="prefetch" href="/docs-page/assets/js/99.6bcf12dc.js">
+    <link rel="stylesheet" href="/docs-page/assets/css/0.styles.23eaf595.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><!----> <header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs-page/" class="home-link router-link-active"><img src="/docs-pagelogo.png" alt="IDXIU" class="logo"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs-page/standard/dev/" class="nav-link">
+  开发流程
+</a></div><div class="nav-item"><a href="/docs-page/standard/env/" class="nav-link">
+  环境搭建手册
+</a></div><div class="nav-item"><a href="/docs-page/standard/cut-graph/" class="nav-link">
+  切图规范
+</a></div><div class="nav-item"><a href="/docs-page/standard/front-end/" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/docs-page/guide/introduction/" class="nav-link">
+  vue3文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础强化" class="dropdown-title"><span class="title">基础强化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境搭建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/debug/" class="nav-link">
+  调试技巧
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          语言基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/ts/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/nosql/" class="nav-link">
+  NoSQL
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/mongo/" class="nav-link">
+  mongoDB
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/redis/" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DevOps" class="dropdown-title"><span class="title">DevOps</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          效率工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/webpack/" class="nav-link">
+  webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          团队协同
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/showdoc/" class="nav-link">
+  showDoc
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/doclever/" class="nav-link">
+  DOClever
+</a></li></ul></li><li class="dropdown-item"><h4>
+          容器化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/docker-advance/" class="nav-link">
+  Docker进阶
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/k8s/" class="nav-link">
+  Kubernetes
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs-page/git/" class="nav-link router-link-active">
+  Git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="全端项目" class="dropdown-title"><span class="title">全端项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          社区项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/project/community-pc/" class="nav-link">
+  社区PC
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-admin/" class="nav-link">
+  管理后台
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-webapp/" class="nav-link">
+  WebApp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          多平台+跨端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/project/community-miniapp/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-flutter/" class="nav-link">
+  Flutter 2.0
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-electron/" class="nav-link">
+  Electron桌面端
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React世界
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/project/react/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="官方项目" class="dropdown-title"><span class="title">官方项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v3.idxiu.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue3 自部署
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://next.router.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue Router
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://next.vuex.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vuex
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue CLI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://next.vue-test-utils.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue Test Utils
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://devtools.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Devtools
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://news.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Weekly news
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          笔试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/types/" class="nav-link">
+  分类笔试题
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/techs/" class="nav-link">
+  笔记技巧
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试技巧
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/basic/" class="nav-link">
+  技术面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/projects/" class="nav-link">
+  项目面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/boss/" class="nav-link">
+  BOSS面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/hr/" class="nav-link">
+  HR面
+</a></li></ul></li><li class="dropdown-item"><h4>
+          简历
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/writor/" class="nav-link">
+  写好简历
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/templates/" class="nav-link">
+  简历模板
+</a></li></ul></li><li class="dropdown-item"><h4>
+          公司行业
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/company/" class="nav-link">
+  选择公司
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/industry/" class="nav-link">
+  行业洞悉
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          日志
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/update-logs/" class="nav-link">
+  更新日志
+</a></li><li class="dropdown-subitem"><a href="https://github.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://gitee.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          参与贡献
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/notes/" class="nav-link">
+  贡献指南
+</a></li><li class="dropdown-subitem"><a href="/docs-page/about/vuepress/" class="nav-link">
+  项目说明
+</a></li></ul></li><li class="dropdown-item"><h4>
+          社交媒介
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/index/" class="nav-link">
+  介绍
+</a></li></ul></li></ul></div></div> <a href="https://github.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="repo-link hide">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs-page/standard/dev/" class="nav-link">
+  开发流程
+</a></div><div class="nav-item"><a href="/docs-page/standard/env/" class="nav-link">
+  环境搭建手册
+</a></div><div class="nav-item"><a href="/docs-page/standard/cut-graph/" class="nav-link">
+  切图规范
+</a></div><div class="nav-item"><a href="/docs-page/standard/front-end/" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/docs-page/guide/introduction/" class="nav-link">
+  vue3文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础强化" class="dropdown-title"><span class="title">基础强化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境搭建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/debug/" class="nav-link">
+  调试技巧
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          语言基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/ts/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/nosql/" class="nav-link">
+  NoSQL
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/mongo/" class="nav-link">
+  mongoDB
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/redis/" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DevOps" class="dropdown-title"><span class="title">DevOps</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          效率工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/webpack/" class="nav-link">
+  webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          团队协同
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/showdoc/" class="nav-link">
+  showDoc
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/doclever/" class="nav-link">
+  DOClever
+</a></li></ul></li><li class="dropdown-item"><h4>
+          容器化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/docker-advance/" class="nav-link">
+  Docker进阶
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/k8s/" class="nav-link">
+  Kubernetes
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs-page/git/" class="nav-link router-link-active">
+  Git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="全端项目" class="dropdown-title"><span class="title">全端项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          社区项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/project/community-pc/" class="nav-link">
+  社区PC
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-admin/" class="nav-link">
+  管理后台
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-webapp/" class="nav-link">
+  WebApp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          多平台+跨端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/project/community-miniapp/" class="nav-link">
+  微信小程序
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-flutter/" class="nav-link">
+  Flutter 2.0
+</a></li><li class="dropdown-subitem"><a href="/docs-page/project/community-electron/" class="nav-link">
+  Electron桌面端
+</a></li></ul></li><li class="dropdown-item"><h4>
+          React世界
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/project/react/" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="官方项目" class="dropdown-title"><span class="title">官方项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://v3.idxiu.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue3 自部署
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://next.router.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue Router
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://next.vuex.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vuex
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://cli.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue CLI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://next.vue-test-utils.vuejs.org/guide/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue Test Utils
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://devtools.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Devtools
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://news.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Weekly news
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.vuejs.org/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          笔试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/types/" class="nav-link">
+  分类笔试题
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/techs/" class="nav-link">
+  笔记技巧
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试技巧
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/basic/" class="nav-link">
+  技术面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/projects/" class="nav-link">
+  项目面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/boss/" class="nav-link">
+  BOSS面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/hr/" class="nav-link">
+  HR面
+</a></li></ul></li><li class="dropdown-item"><h4>
+          简历
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/writor/" class="nav-link">
+  写好简历
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/templates/" class="nav-link">
+  简历模板
+</a></li></ul></li><li class="dropdown-item"><h4>
+          公司行业
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/company/" class="nav-link">
+  选择公司
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/industry/" class="nav-link">
+  行业洞悉
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          日志
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/update-logs/" class="nav-link">
+  更新日志
+</a></li><li class="dropdown-subitem"><a href="https://github.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://gitee.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          参与贡献
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/notes/" class="nav-link">
+  贡献指南
+</a></li><li class="dropdown-subitem"><a href="/docs-page/about/vuepress/" class="nav-link">
+  项目说明
+</a></li></ul></li><li class="dropdown-item"><h4>
+          社交媒介
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/index/" class="nav-link">
+  介绍
+</a></li></ul></li></ul></div></div> <a href="https://github.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="repo-link hide">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/docs-page/git/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/docs-page/git/01-git-install.html" class="sidebar-link">Git工具</a></li><li><a href="/docs-page/git/02-ssh.html" class="sidebar-link">如何创建和添加SSH Keys</a></li><li><a href="/docs-page/git/03-git规范.html" class="sidebar-link">git规范</a></li><li><a href="/docs-page/git/04-命令行中使用git.html" class="sidebar-link">开始在命令行中使用Git</a></li><li><a href="/docs-page/git/05-基础的命令行命令.html" class="sidebar-link">基础的命令行命令</a></li><li><a href="/docs-page/git/06-GIT基础命令.html" class="sidebar-link">Git基本命令</a></li><li><a href="/docs-page/git/07-Windows下正确配置客户端以使用SSH协议.html" class="sidebar-link">Windows下使用TortoiseGit的解决方案如下：</a></li><li><a href="/docs-page/git/08-自动化.html" class="active sidebar-link">自动化打包、部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs-page/git/08-自动化.html#vuepress-自动发布" class="sidebar-link">vuepress 自动发布</a></li></ul></li></ul> </aside> <main class="page"><div class="carbon-ads"></div>  <div class="theme-default-content content__default"><h1 id="自动化打包、部署"><a href="#自动化打包、部署" class="header-anchor">#</a> 自动化打包、部署</h1> <h2 id="vuepress-自动发布"><a href="#vuepress-自动发布" class="header-anchor">#</a> vuepress 自动发布</h2> <blockquote><p>github actions.github/workflows/master.yml:</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>name: Build  to GitHub Pages
+on:
+  push:
+    branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+
+    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+    - name: Cache node modules
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm i
+
+    # Vuepress Build.
+    - name: Generates Pages
+      run: |
+        npm run build
+
+    - name: Deploy Github Pages🚀
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        repository-name: idxiu/xxx # 操作应部署到的分支。.
+        branch: master
+        folder: ./src/.vuepress/dist # 操作应部署的文件夹.
+        ssh-key: ${{ secrets.DEPLOY_KEY }} # 部署密钥
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div></div> <footer class="page-edit" data-v-007274aa><div class="container" data-v-007274aa><p data-v-007274aa><span class="edit-link" data-v-007274aa>
+         发现了错误或者想要为文档做贡献？
+          <a href="https://github.com/idxiu/docs/edit/master/src/git/08-自动化.md" target="_blank" rel="noopener noreferrer" data-v-007274aa>
+            在 GitHub 上编辑此页
+            <span data-v-007274aa><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></span> <br data-v-007274aa> <span class="prefix" data-v-007274aa>最近更新时间:</span> <span class="time" data-v-007274aa>2021-10-28, 08:06:47 UTC</span></p></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs-page/git/07-Windows下正确配置客户端以使用SSH协议.html" class="prev">Windows下使用TortoiseGit的解决方案如下：</a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs-page/assets/js/app.1d3cca57.js" defer></script><script src="/docs-page/assets/js/2.5c9effa0.js" defer></script><script src="/docs-page/assets/js/5.d6e44560.js" defer></script><script src="/docs-page/assets/js/74.df4b6429.js" defer></script><script src="/docs-page/assets/js/20.099009ba.js" defer></script>
+  </body>
+</html>
