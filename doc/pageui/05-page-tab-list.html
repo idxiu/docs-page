@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>选项卡带刷新加载 | IDXIU</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docs-page/favicon.png">
+    <script crossorigin="anonymous" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7449487677378035"></script>
+    <meta name="description" content="IDXIU DOCS">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/docs-page/assets/css/0.styles.f0b5d7d2.css" as="style"><link rel="preload" href="/docs-page/assets/js/app.54208aa2.js" as="script"><link rel="preload" href="/docs-page/assets/js/3.b52c757a.js" as="script"><link rel="preload" href="/docs-page/assets/js/79.2dab6dbd.js" as="script"><link rel="preload" href="/docs-page/assets/js/20.a516b1cb.js" as="script"><link rel="prefetch" href="/docs-page/assets/js/10.cdcdb2e0.js"><link rel="prefetch" href="/docs-page/assets/js/100.a3433986.js"><link rel="prefetch" href="/docs-page/assets/js/101.8341399a.js"><link rel="prefetch" href="/docs-page/assets/js/102.4f5beed1.js"><link rel="prefetch" href="/docs-page/assets/js/103.47cb8f58.js"><link rel="prefetch" href="/docs-page/assets/js/104.9e3049e9.js"><link rel="prefetch" href="/docs-page/assets/js/105.f50fdfc0.js"><link rel="prefetch" href="/docs-page/assets/js/106.2cfa6268.js"><link rel="prefetch" href="/docs-page/assets/js/107.66c994c6.js"><link rel="prefetch" href="/docs-page/assets/js/108.7c64f07a.js"><link rel="prefetch" href="/docs-page/assets/js/109.622423a4.js"><link rel="prefetch" href="/docs-page/assets/js/11.4b0b4920.js"><link rel="prefetch" href="/docs-page/assets/js/110.c4cd9215.js"><link rel="prefetch" href="/docs-page/assets/js/111.c91d95f1.js"><link rel="prefetch" href="/docs-page/assets/js/112.328d786d.js"><link rel="prefetch" href="/docs-page/assets/js/113.f2838150.js"><link rel="prefetch" href="/docs-page/assets/js/114.5e8ec889.js"><link rel="prefetch" href="/docs-page/assets/js/115.fec7680e.js"><link rel="prefetch" href="/docs-page/assets/js/116.0ce1bca5.js"><link rel="prefetch" href="/docs-page/assets/js/117.62dd6c4b.js"><link rel="prefetch" href="/docs-page/assets/js/118.4d11fa3c.js"><link rel="prefetch" href="/docs-page/assets/js/119.830f4853.js"><link rel="prefetch" href="/docs-page/assets/js/12.9f862144.js"><link rel="prefetch" href="/docs-page/assets/js/120.6778bf3f.js"><link rel="prefetch" href="/docs-page/assets/js/121.ab9fd8cc.js"><link rel="prefetch" href="/docs-page/assets/js/122.c5f4cce6.js"><link rel="prefetch" href="/docs-page/assets/js/123.ddc7dde7.js"><link rel="prefetch" href="/docs-page/assets/js/124.aa992203.js"><link rel="prefetch" href="/docs-page/assets/js/125.ef7e61aa.js"><link rel="prefetch" href="/docs-page/assets/js/126.47efe884.js"><link rel="prefetch" href="/docs-page/assets/js/127.845a98ae.js"><link rel="prefetch" href="/docs-page/assets/js/128.c1ddfab7.js"><link rel="prefetch" href="/docs-page/assets/js/129.163c0625.js"><link rel="prefetch" href="/docs-page/assets/js/13.6f88a4ca.js"><link rel="prefetch" href="/docs-page/assets/js/130.d0613e1c.js"><link rel="prefetch" href="/docs-page/assets/js/131.b5a3c25e.js"><link rel="prefetch" href="/docs-page/assets/js/132.eaf42fc0.js"><link rel="prefetch" href="/docs-page/assets/js/133.b5d7afb1.js"><link rel="prefetch" href="/docs-page/assets/js/134.2d4e3f3a.js"><link rel="prefetch" href="/docs-page/assets/js/135.a5283af7.js"><link rel="prefetch" href="/docs-page/assets/js/136.6b470a98.js"><link rel="prefetch" href="/docs-page/assets/js/137.6d87605b.js"><link rel="prefetch" href="/docs-page/assets/js/138.0258a60c.js"><link rel="prefetch" href="/docs-page/assets/js/139.d064155d.js"><link rel="prefetch" href="/docs-page/assets/js/14.c01439d1.js"><link rel="prefetch" href="/docs-page/assets/js/140.9ba15c78.js"><link rel="prefetch" href="/docs-page/assets/js/141.171a19dc.js"><link rel="prefetch" href="/docs-page/assets/js/142.d96d0d00.js"><link rel="prefetch" href="/docs-page/assets/js/143.772aefca.js"><link rel="prefetch" href="/docs-page/assets/js/144.118d1462.js"><link rel="prefetch" href="/docs-page/assets/js/145.b9e57fa5.js"><link rel="prefetch" href="/docs-page/assets/js/146.21b4c237.js"><link rel="prefetch" href="/docs-page/assets/js/147.4f9214ed.js"><link rel="prefetch" href="/docs-page/assets/js/148.93511ca0.js"><link rel="prefetch" href="/docs-page/assets/js/149.cef1d6fa.js"><link rel="prefetch" href="/docs-page/assets/js/15.39f177c3.js"><link rel="prefetch" href="/docs-page/assets/js/150.70db049d.js"><link rel="prefetch" href="/docs-page/assets/js/151.98efc8ae.js"><link rel="prefetch" href="/docs-page/assets/js/152.b86e57c3.js"><link rel="prefetch" href="/docs-page/assets/js/153.0719e715.js"><link rel="prefetch" href="/docs-page/assets/js/154.1a392752.js"><link rel="prefetch" href="/docs-page/assets/js/155.c4583022.js"><link rel="prefetch" href="/docs-page/assets/js/156.0fe0bc2c.js"><link rel="prefetch" href="/docs-page/assets/js/157.5afdb523.js"><link rel="prefetch" href="/docs-page/assets/js/158.2e3bb6cb.js"><link rel="prefetch" href="/docs-page/assets/js/159.573837a8.js"><link rel="prefetch" href="/docs-page/assets/js/16.9a0e2bdd.js"><link rel="prefetch" href="/docs-page/assets/js/160.6ab914a2.js"><link rel="prefetch" href="/docs-page/assets/js/161.5e1dcda4.js"><link rel="prefetch" href="/docs-page/assets/js/162.91e89225.js"><link rel="prefetch" href="/docs-page/assets/js/163.d129c76e.js"><link rel="prefetch" href="/docs-page/assets/js/164.280a6126.js"><link rel="prefetch" href="/docs-page/assets/js/165.908dcf10.js"><link rel="prefetch" href="/docs-page/assets/js/166.8a7f23cc.js"><link rel="prefetch" href="/docs-page/assets/js/167.c6623073.js"><link rel="prefetch" href="/docs-page/assets/js/168.ee3a97fc.js"><link rel="prefetch" href="/docs-page/assets/js/169.3dd46339.js"><link rel="prefetch" href="/docs-page/assets/js/17.0652ca0f.js"><link rel="prefetch" href="/docs-page/assets/js/170.9ed7327c.js"><link rel="prefetch" href="/docs-page/assets/js/171.93f8ae2b.js"><link rel="prefetch" href="/docs-page/assets/js/172.a4bf8744.js"><link rel="prefetch" href="/docs-page/assets/js/173.15604f88.js"><link rel="prefetch" href="/docs-page/assets/js/174.a006b9b4.js"><link rel="prefetch" href="/docs-page/assets/js/175.446ef6ec.js"><link rel="prefetch" href="/docs-page/assets/js/176.8f584b61.js"><link rel="prefetch" href="/docs-page/assets/js/177.85f980af.js"><link rel="prefetch" href="/docs-page/assets/js/178.e494ca22.js"><link rel="prefetch" href="/docs-page/assets/js/179.311663cf.js"><link rel="prefetch" href="/docs-page/assets/js/18.b1e1e1ad.js"><link rel="prefetch" href="/docs-page/assets/js/180.7472d159.js"><link rel="prefetch" href="/docs-page/assets/js/181.93f4bc4f.js"><link rel="prefetch" href="/docs-page/assets/js/182.2dfb1d22.js"><link rel="prefetch" href="/docs-page/assets/js/183.e9d630a5.js"><link rel="prefetch" href="/docs-page/assets/js/184.3ab63a9e.js"><link rel="prefetch" href="/docs-page/assets/js/185.e9d1fe8a.js"><link rel="prefetch" href="/docs-page/assets/js/186.7250069b.js"><link rel="prefetch" href="/docs-page/assets/js/19.04dd3af2.js"><link rel="prefetch" href="/docs-page/assets/js/21.9609f407.js"><link rel="prefetch" href="/docs-page/assets/js/22.c906a785.js"><link rel="prefetch" href="/docs-page/assets/js/23.4ac71ff0.js"><link rel="prefetch" href="/docs-page/assets/js/24.f2f935c6.js"><link rel="prefetch" href="/docs-page/assets/js/25.e8eded34.js"><link rel="prefetch" href="/docs-page/assets/js/26.c3b82746.js"><link rel="prefetch" href="/docs-page/assets/js/27.451d85be.js"><link rel="prefetch" href="/docs-page/assets/js/28.47d23631.js"><link rel="prefetch" href="/docs-page/assets/js/29.19191626.js"><link rel="prefetch" href="/docs-page/assets/js/30.0f636013.js"><link rel="prefetch" href="/docs-page/assets/js/31.1863f53e.js"><link rel="prefetch" href="/docs-page/assets/js/32.a3655975.js"><link rel="prefetch" href="/docs-page/assets/js/33.e6d59f59.js"><link rel="prefetch" href="/docs-page/assets/js/34.000b9575.js"><link rel="prefetch" href="/docs-page/assets/js/35.bfc63866.js"><link rel="prefetch" href="/docs-page/assets/js/36.6a37f98f.js"><link rel="prefetch" href="/docs-page/assets/js/37.6979fac4.js"><link rel="prefetch" href="/docs-page/assets/js/38.cd3ed611.js"><link rel="prefetch" href="/docs-page/assets/js/39.7ed469c3.js"><link rel="prefetch" href="/docs-page/assets/js/4.8272eec9.js"><link rel="prefetch" href="/docs-page/assets/js/40.04681a9c.js"><link rel="prefetch" href="/docs-page/assets/js/41.4968a187.js"><link rel="prefetch" href="/docs-page/assets/js/42.5b1377a6.js"><link rel="prefetch" href="/docs-page/assets/js/43.75ff4e31.js"><link rel="prefetch" href="/docs-page/assets/js/44.8a514ece.js"><link rel="prefetch" href="/docs-page/assets/js/45.144033fe.js"><link rel="prefetch" href="/docs-page/assets/js/46.78e7f731.js"><link rel="prefetch" href="/docs-page/assets/js/47.b11bc43d.js"><link rel="prefetch" href="/docs-page/assets/js/48.cd058663.js"><link rel="prefetch" href="/docs-page/assets/js/49.fda6eb25.js"><link rel="prefetch" href="/docs-page/assets/js/5.a7ec337d.js"><link rel="prefetch" href="/docs-page/assets/js/50.635ebbeb.js"><link rel="prefetch" href="/docs-page/assets/js/51.550397e0.js"><link rel="prefetch" href="/docs-page/assets/js/52.da7d91b4.js"><link rel="prefetch" href="/docs-page/assets/js/53.dfa509ab.js"><link rel="prefetch" href="/docs-page/assets/js/54.a7747f38.js"><link rel="prefetch" href="/docs-page/assets/js/55.77bedc0d.js"><link rel="prefetch" href="/docs-page/assets/js/56.fd318f30.js"><link rel="prefetch" href="/docs-page/assets/js/57.0771cf02.js"><link rel="prefetch" href="/docs-page/assets/js/58.3dc1a8ae.js"><link rel="prefetch" href="/docs-page/assets/js/59.5407243b.js"><link rel="prefetch" href="/docs-page/assets/js/6.299ec63d.js"><link rel="prefetch" href="/docs-page/assets/js/60.2f4645d7.js"><link rel="prefetch" href="/docs-page/assets/js/61.5aeca5dd.js"><link rel="prefetch" href="/docs-page/assets/js/62.e564d707.js"><link rel="prefetch" href="/docs-page/assets/js/63.42c46525.js"><link rel="prefetch" href="/docs-page/assets/js/64.9fea3682.js"><link rel="prefetch" href="/docs-page/assets/js/65.718e8cbf.js"><link rel="prefetch" href="/docs-page/assets/js/66.97afd8a7.js"><link rel="prefetch" href="/docs-page/assets/js/67.e1e2d85b.js"><link rel="prefetch" href="/docs-page/assets/js/68.a1454385.js"><link rel="prefetch" href="/docs-page/assets/js/69.9d466708.js"><link rel="prefetch" href="/docs-page/assets/js/7.cd5d970c.js"><link rel="prefetch" href="/docs-page/assets/js/70.5c4f5f2d.js"><link rel="prefetch" href="/docs-page/assets/js/71.83050159.js"><link rel="prefetch" href="/docs-page/assets/js/72.c3183d03.js"><link rel="prefetch" href="/docs-page/assets/js/73.cda6e389.js"><link rel="prefetch" href="/docs-page/assets/js/74.18250437.js"><link rel="prefetch" href="/docs-page/assets/js/75.691afb73.js"><link rel="prefetch" href="/docs-page/assets/js/76.c8b4e849.js"><link rel="prefetch" href="/docs-page/assets/js/77.fab255cd.js"><link rel="prefetch" href="/docs-page/assets/js/78.e0beccfc.js"><link rel="prefetch" href="/docs-page/assets/js/8.65da27c9.js"><link rel="prefetch" href="/docs-page/assets/js/80.06377b19.js"><link rel="prefetch" href="/docs-page/assets/js/81.00180391.js"><link rel="prefetch" href="/docs-page/assets/js/82.9b63a562.js"><link rel="prefetch" href="/docs-page/assets/js/83.5ffb256b.js"><link rel="prefetch" href="/docs-page/assets/js/84.5fad2f0c.js"><link rel="prefetch" href="/docs-page/assets/js/85.19f04633.js"><link rel="prefetch" href="/docs-page/assets/js/86.cbeb6617.js"><link rel="prefetch" href="/docs-page/assets/js/87.a71c3325.js"><link rel="prefetch" href="/docs-page/assets/js/88.cbdf8c4a.js"><link rel="prefetch" href="/docs-page/assets/js/89.f7c461e7.js"><link rel="prefetch" href="/docs-page/assets/js/9.063eaaf1.js"><link rel="prefetch" href="/docs-page/assets/js/90.316b8f88.js"><link rel="prefetch" href="/docs-page/assets/js/91.d87cb3d3.js"><link rel="prefetch" href="/docs-page/assets/js/92.1a343303.js"><link rel="prefetch" href="/docs-page/assets/js/93.e202c072.js"><link rel="prefetch" href="/docs-page/assets/js/94.cb4f8695.js"><link rel="prefetch" href="/docs-page/assets/js/95.3ac7f99f.js"><link rel="prefetch" href="/docs-page/assets/js/96.7918b4e7.js"><link rel="prefetch" href="/docs-page/assets/js/97.a82a2034.js"><link rel="prefetch" href="/docs-page/assets/js/98.ba599d7b.js"><link rel="prefetch" href="/docs-page/assets/js/99.9af4aab7.js"><link rel="prefetch" href="/docs-page/assets/js/vendors~docsearch.cf3a3f46.js">
+    <link rel="stylesheet" href="/docs-page/assets/css/0.styles.f0b5d7d2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><!----> <header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs-page/" class="home-link router-link-active"><img src="/docs-page/logo.png" alt="IDXIU" class="logo"></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs-page/standard/dev/" class="nav-link">
+  开发流程
+</a></div><div class="nav-item"><a href="/docs-page/standard/env/" class="nav-link">
+  环境搭建手册
+</a></div><div class="nav-item"><a href="/docs-page/standard/cut-graph/" class="nav-link">
+  切图规范
+</a></div><div class="nav-item"><a href="/docs-page/standard/front-end/" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/docs-page/doc/pageui/" class="nav-link router-link-active">
+  pageUI
+</a></div><div class="nav-item"><a href="/docs-page/guide/introduction/" class="nav-link">
+  vue3文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础强化" class="dropdown-title"><span class="title">基础强化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境搭建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/debug/" class="nav-link">
+  调试技巧
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          语言基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/ts/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/nosql/" class="nav-link">
+  NoSQL
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/mongo/" class="nav-link">
+  mongoDB
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/redis/" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DevOps" class="dropdown-title"><span class="title">DevOps</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          效率工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/webpack/" class="nav-link">
+  webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          团队协同
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/showdoc/" class="nav-link">
+  showDoc
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/doclever/" class="nav-link">
+  DOClever
+</a></li></ul></li><li class="dropdown-item"><h4>
+          容器化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/docker-advance/" class="nav-link">
+  Docker进阶
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/k8s/" class="nav-link">
+  Kubernetes
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs-page/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="进阶" class="dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-page/advanced/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/docs-page/advanced/codePen/" class="nav-link">
+  代码块
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          笔试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/types/" class="nav-link">
+  分类笔试题
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/techs/" class="nav-link">
+  笔记技巧
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试技巧
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/basic/" class="nav-link">
+  技术面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/projects/" class="nav-link">
+  项目面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/boss/" class="nav-link">
+  BOSS面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/hr/" class="nav-link">
+  HR面
+</a></li></ul></li><li class="dropdown-item"><h4>
+          简历
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/writor/" class="nav-link">
+  写好简历
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/templates/" class="nav-link">
+  简历模板
+</a></li></ul></li><li class="dropdown-item"><h4>
+          公司行业
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/company/" class="nav-link">
+  选择公司
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/industry/" class="nav-link">
+  行业洞悉
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          日志
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/update-logs/" class="nav-link">
+  更新日志
+</a></li><li class="dropdown-subitem"><a href="https://github.com/idxiu/docs-page" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          参与贡献
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/notes/" class="nav-link">
+  贡献指南
+</a></li><li class="dropdown-subitem"><a href="/docs-page/about/vuepress/" class="nav-link">
+  项目说明
+</a></li></ul></li><li class="dropdown-item"><h4>
+          社交媒介
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/index/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-subitem"><a href="/docs-page/links/友情连接.html" class="nav-link">
+  友情链接
+</a></li><li class="dropdown-subitem"><a href="/docs-page/links/留言版.html" class="nav-link">
+  留言版
+</a></li></ul></li></ul></div></div> <a href="https://github.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="repo-link hide">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <div id="docsearch"></div></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs-page/standard/dev/" class="nav-link">
+  开发流程
+</a></div><div class="nav-item"><a href="/docs-page/standard/env/" class="nav-link">
+  环境搭建手册
+</a></div><div class="nav-item"><a href="/docs-page/standard/cut-graph/" class="nav-link">
+  切图规范
+</a></div><div class="nav-item"><a href="/docs-page/standard/front-end/" class="nav-link">
+  前端规范
+</a></div><div class="nav-item"><a href="/docs-page/doc/pageui/" class="nav-link router-link-active">
+  pageUI
+</a></div><div class="nav-item"><a href="/docs-page/guide/introduction/" class="nav-link">
+  vue3文档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础强化" class="dropdown-title"><span class="title">基础强化</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境搭建
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/debug/" class="nav-link">
+  调试技巧
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/docker/" class="nav-link">
+  Docker
+</a></li></ul></li><li class="dropdown-item"><h4>
+          语言基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/ts/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/basic/nosql/" class="nav-link">
+  NoSQL
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/mongo/" class="nav-link">
+  mongoDB
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/basic/redis/" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="DevOps" class="dropdown-title"><span class="title">DevOps</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          效率工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/webpack/" class="nav-link">
+  webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          团队协同
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/showdoc/" class="nav-link">
+  showDoc
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/doclever/" class="nav-link">
+  DOClever
+</a></li></ul></li><li class="dropdown-item"><h4>
+          容器化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/doc/devops/docker-advance/" class="nav-link">
+  Docker进阶
+</a></li><li class="dropdown-subitem"><a href="/docs-page/doc/devops/k8s/" class="nav-link">
+  Kubernetes
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs-page/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="进阶" class="dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-page/advanced/algorithm/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/docs-page/advanced/codePen/" class="nav-link">
+  代码块
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          笔试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/types/" class="nav-link">
+  分类笔试题
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/techs/" class="nav-link">
+  笔记技巧
+</a></li></ul></li><li class="dropdown-item"><h4>
+          面试技巧
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/basic/" class="nav-link">
+  技术面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/projects/" class="nav-link">
+  项目面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/boss/" class="nav-link">
+  BOSS面
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/hr/" class="nav-link">
+  HR面
+</a></li></ul></li><li class="dropdown-item"><h4>
+          简历
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/writor/" class="nav-link">
+  写好简历
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/templates/" class="nav-link">
+  简历模板
+</a></li></ul></li><li class="dropdown-item"><h4>
+          公司行业
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/interview/company/" class="nav-link">
+  选择公司
+</a></li><li class="dropdown-subitem"><a href="/docs-page/interview/industry/" class="nav-link">
+  行业洞悉
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          日志
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/update-logs/" class="nav-link">
+  更新日志
+</a></li><li class="dropdown-subitem"><a href="https://github.com/idxiu/docs-page" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github源码
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          参与贡献
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/notes/" class="nav-link">
+  贡献指南
+</a></li><li class="dropdown-subitem"><a href="/docs-page/about/vuepress/" class="nav-link">
+  项目说明
+</a></li></ul></li><li class="dropdown-item"><h4>
+          社交媒介
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs-page/about/index/" class="nav-link">
+  介绍
+</a></li><li class="dropdown-subitem"><a href="/docs-page/links/友情连接.html" class="nav-link">
+  友情链接
+</a></li><li class="dropdown-subitem"><a href="/docs-page/links/留言版.html" class="nav-link">
+  留言版
+</a></li></ul></li></ul></div></div> <a href="https://github.com/idxiu/docs" target="_blank" rel="noopener noreferrer" class="repo-link hide">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/docs-page/doc/pageui/" aria-current="page" class="sidebar-link">PageUI  简介</a></li><li><a href="/docs-page/doc/pageui/01-page-panel.html" class="sidebar-link">页面组件</a></li><li><a href="/docs-page/doc/pageui/02-page-refresh.html" class="sidebar-link">下拉刷新</a></li><li><a href="/docs-page/doc/pageui/03-page-loading.html" class="sidebar-link">全屏加载</a></li><li><a href="/docs-page/doc/pageui/04-page-loadmore.html" class="sidebar-link">加载更多</a></li><li><a href="/docs-page/doc/pageui/05-page-tab-list.html" aria-current="page" class="active sidebar-link">选项卡带刷新加载</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs-page/doc/pageui/06-page-empty.html" class="sidebar-link">空页面</a></li><li><a href="/docs-page/doc/pageui/07-page-btn.html" class="sidebar-link">按钮</a></li><li><a href="/docs-page/doc/pageui/08-page-iphone-bottom.html" class="sidebar-link">iphone底部适配</a></li><li><a href="/docs-page/doc/pageui/09-page-mp-menu-spacing.html" class="sidebar-link">微信小程序右侧胶囊占位</a></li></ul> </aside> <main class="page"><div class="carbon-ads"></div>  <div class="theme-default-content content__default"><h1 id="选项卡带刷新加载"><a href="#选项卡带刷新加载" class="header-anchor">#</a> 选项卡带刷新加载</h1> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>不需要滑动加载请使用 <code>page-tab-list-comm</code> 组件</p></div> <h3 id="演示代码"><a href="#演示代码" class="header-anchor">#</a> 演示代码</h3> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>page-panel</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>分类<span class="token punctuation">&quot;</span></span>  <span class="token attr-name">:fullPage</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>page<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:isLoading</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>pageLoading<span class="token punctuation">&quot;</span></span> <span class="token punctuation">&gt;</span></span> 
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>gBody<span class="token punctuation">&quot;</span></span>  <span class="token punctuation">&gt;</span></span> 
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>page-tab-list</span> <span class="token attr-name">:enable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stickyEnable<span class="token punctuation">&quot;</span></span> <span class="token attr-name">tabRest</span> <span class="token attr-name">:tabList</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tabList<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:mainHeight</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mHeight<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tabs<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:index</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@startReq</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>startReq<span class="token punctuation">&quot;</span></span> <span class="token attr-name">disableTouch</span><span class="token punctuation">&gt;</span></span>
+             <span class="token comment">&lt;!-- 选项列表数据上方插槽 --&gt;</span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>other<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>flex flex-vh-center flex-between py-30 px-32<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+                类型-1
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+             <span class="token comment">&lt;!-- 数据渲染   --&gt;</span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span>  <span class="token attr-name"><span class="token namespace">v-slot:</span>dataList</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{data,tabIndex}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- tab 对应列表数据 --&gt;</span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>data &amp;&amp; data.length&gt;0<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>px-32<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>(book,booIndex) in data<span class="token punctuation">&quot;</span></span>  <span class="token punctuation">&gt;</span></span> 
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>book-lr-item</span>  <span class="token attr-name">:book</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>book<span class="token punctuation">&quot;</span></span>  <span class="token attr-name">imgHeight</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>204<span class="token punctuation">&quot;</span></span> <span class="token attr-name">imgwidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>204<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>book.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>book-lr-item</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span> 
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+               <span class="token comment">&lt;!-- 空数据 --&gt;</span> 
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>page-empty</span>  <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>page-empty</span><span class="token punctuation">&gt;</span></span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>   
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>page-tab-list</span><span class="token punctuation">&gt;</span></span>   
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>page-panel</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span> 
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>  
+        <span class="token literal-property property">tabList</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'全部'</span><span class="token punctuation">,</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">''</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'社科'</span><span class="token punctuation">,</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1403618681748156416'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'文艺'</span><span class="token punctuation">,</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1403618735858872320'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'少儿'</span><span class="token punctuation">,</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">'1403618775771869184'</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment">// 页面加载</span>
+        <span class="token literal-property property">pageLoading</span>   <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">// 内容主体高度</span>
+        <span class="token literal-property property">mainHeight</span>    <span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>   
+        <span class="token literal-property property">lastIndex</span><span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">onLoad</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+      <span class="token keyword">this</span><span class="token punctuation">.</span>pageLoading <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>  
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>isLogin<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        uni<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'请稍后'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>  
+    <span class="token function">onReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+      <span class="token comment">//获取内容高度</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getContentHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">methods</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token function">getContentHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$util<span class="token punctuation">.</span><span class="token function">getRefs</span><span class="token punctuation">(</span><span class="token string">'page'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ref</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span> 
+          ref<span class="token punctuation">.</span><span class="token function">getDomSize</span><span class="token punctuation">(</span><span class="token string">'pageBody'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span> 
+            <span class="token comment">// 主体高度 = 页面高度 - 自定义区域高度 tab默认的高度为 80 加上 底部滑块的高度 6 和默认的间隔 20 合计 106 rpx</span>
+            <span class="token comment">// 如果自定义区域有 margin 尺寸获取不到请加上这个值，可以利用 uni.upx2px() 转换</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>mHeight <span class="token operator">=</span> e<span class="token punctuation">.</span>height <span class="token operator">-</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">106</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+      <span class="token function">initHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+        <span class="token comment">//去掉other插槽的高度 才是内容区域的高度</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>mHeight<span class="token operator">=</span><span class="token keyword">this</span><span class="token punctuation">.</span>mHeight <span class="token operator">-</span> uni<span class="token punctuation">.</span><span class="token function">upx2px</span><span class="token punctuation">(</span><span class="token number">110</span><span class="token punctuation">)</span>
+        <span class="token comment">// 第一次加载数据  会触发 startReq 回调</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>tabs<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>  
+      <span class="token comment">//开始请求</span>
+      <span class="token function">startReq</span><span class="token punctuation">(</span><span class="token parameter">req</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'req'</span><span class="token punctuation">,</span>req<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> <span class="token punctuation">{</span>isReload<span class="token punctuation">,</span>tabIndex<span class="token punctuation">,</span>page<span class="token punctuation">}</span><span class="token operator">=</span>req<span class="token punctuation">;</span> 
+        <span class="token keyword">let</span> data<span class="token operator">=</span><span class="token punctuation">{</span>
+          <span class="token literal-property property">currentPage</span><span class="token operator">:</span>page<span class="token punctuation">,</span> 
+          <span class="token literal-property property">pageSize</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span> 
+          <span class="token literal-property property">contentTypeId</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>tabList<span class="token punctuation">[</span>tabIndex<span class="token punctuation">]</span><span class="token punctuation">.</span>id <span class="token punctuation">,</span>
+          <span class="token literal-property property">isFree</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">isLimitTimeFree</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">,</span> 
+        <span class="token punctuation">}</span>
+        <span class="token comment">//想后台请求数据</span>
+        <span class="token function">queryList</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+          <span class="token keyword">let</span> list<span class="token operator">=</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>records<span class="token operator">||</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+          <span class="token keyword">let</span> isnomore<span class="token operator">=</span>list<span class="token punctuation">.</span>length<span class="token operator">&lt;</span>page<span class="token operator">*</span><span class="token number">10</span>
+          <span class="token comment">//请求成功把数据填充tab</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>tabs<span class="token punctuation">.</span><span class="token function">reqFinish</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span>list<span class="token operator">||</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>isnomore<span class="token punctuation">)</span>
+          uni<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+          uni<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>tabs<span class="token punctuation">.</span><span class="token function">onReqErr</span><span class="token punctuation">(</span>isReload<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br></div></div><h3 id="attributes"><a href="#attributes" class="header-anchor">#</a> Attributes</h3> <div class="table-custom"><table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td>otherInfo</td> <td>附加信息</td> <td>Object</td> <td>null</td></tr> <tr><td>gap</td> <td>选项卡距离下方的间隔</td> <td>Number,String</td> <td>20</td></tr> <tr><td>barWidth</td> <td>选项卡宽度</td> <td>Number,String</td> <td>210</td></tr> <tr><td>index</td> <td>选项卡默认选中的索引</td> <td>Number</td> <td>0</td></tr> <tr><td>tabList</td> <td>选项卡数据</td> <td>Array</td> <td>[]</td></tr> <tr><td>tabName</td> <td>选项卡显示的属性</td> <td>String</td> <td>'name'</td></tr> <tr><td>mainHeight</td> <td>内容区高度</td> <td>Number</td> <td>200</td></tr> <tr><td>isScroll</td> <td>选项卡是否滑动</td> <td>Boolean</td> <td>false</td></tr> <tr><td>enable</td> <td>启用吸顶</td> <td>Boolean</td> <td>true</td></tr> <tr><td>tabRest</td> <td>点击tab 重新获取数据</td> <td>Boolean</td> <td>false</td></tr></tbody></table></div> <h3 id="event"><a href="#event" class="header-anchor">#</a> Event</h3> <div class="table-custom"><table><thead><tr><th>事件</th> <th>说明</th></tr></thead> <tbody><tr><td>startReq</td> <td>开启请求数据,回调<code>isReload</code>是否刷新请求, <code>tabIndex</code>当前选项索引, <code>page</code>当前请求页数</td></tr></tbody></table></div> <h3 id="method"><a href="#method" class="header-anchor">#</a> method</h3> <div class="table-custom"><table><thead><tr><th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>init ()</td> <td>组件初始化后调用</td></tr> <tr><td>reqFinish (req,reqData,isnomore)</td> <td>用于请求成功后把数据返回</td></tr> <tr><td>onReqErr (req)</td> <td>请求异常时调用</td></tr> <tr><td>getTabData (tabIndex)</td> <td>获取当前tab的数据</td></tr> <tr><td>updataTabData (tabIndex,data)</td> <td>更新当前tab的数据</td></tr></tbody></table></div> <div class="custom-block tip"><p class="custom-block-title">solt 插槽传值不生效</p> <p>针对小程序端:
+<code>在清单文件中设置 &quot;scopedSlotsCompiler&quot; : &quot;legacy&quot;</code></p></div></div> <!----> <footer class="page-edit" data-v-007274aa><div class="container" data-v-007274aa><p data-v-007274aa><span class="edit-link" data-v-007274aa>
+         发现了错误或者想要为文档做贡献？
+          <a href="https://github.com/idxiu/docs/edit/master/src/doc/pageui/05-page-tab-list.md" target="_blank" rel="noopener noreferrer" data-v-007274aa>
+            在 GitHub 上编辑此页
+            <span data-v-007274aa><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></span> <br data-v-007274aa> <span class="prefix" data-v-007274aa>最近更新时间:</span> <span class="time" data-v-007274aa>2022-03-24, 02:13:11 UTC</span></p></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs-page/doc/pageui/04-page-loadmore.html" class="prev">加载更多</a></span> <span class="next"><a href="/docs-page/doc/pageui/06-page-empty.html">空页面</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/docs-page/assets/js/app.54208aa2.js" defer></script><script src="/docs-page/assets/js/3.b52c757a.js" defer></script><script src="/docs-page/assets/js/79.2dab6dbd.js" defer></script><script src="/docs-page/assets/js/20.a516b1cb.js" defer></script>
+  </body>
+</html>
